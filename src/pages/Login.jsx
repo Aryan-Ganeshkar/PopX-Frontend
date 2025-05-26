@@ -37,7 +37,7 @@ export default function Login() {
     if (!validate()) return;
 
     try {
-      const res = await axios.post('https://popx-backend-6l5a.onrender.com/api/auth/login', form);
+      const res = await axios.post('https://popx-backend-6l5a.onrender.com/api/login', form);
       localStorage.setItem('user', JSON.stringify(res.data.user));
       navigate('/dashboard');
     } catch (err) {
