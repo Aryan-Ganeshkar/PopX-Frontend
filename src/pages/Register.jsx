@@ -47,7 +47,7 @@ const Register = () => {
     if (!validate()) return;
 
     try {
-      await axios.post('https://popx-backend-ibqh.onrender.com/api/register', {
+      await axios.post('https://popx-backend-51nh.onrender.com/api/register', {
         ...form,
         isAgency: form.isAgency === 'yes',
       });
